@@ -4,21 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - Flik</title>
+    <title>Flik - Bienvenido</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
 
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
+            margin: 20px auto;
             padding: 20px;
+            background: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -28,36 +35,47 @@
             color: #333;
         }
 
-        h2 {
-            color: #555;
+        p {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .buttons {
+            text-align: center;
             margin-top: 20px;
         }
 
-        p {
-            margin-bottom: 10px;
+        .buttons a {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 
 <body>
+    <div class="header">
+        <h1>Bienvenido a Flik</h1>
+        <p>Tu solución para [descripción breve de lo que hace tu app]</p>
+    </div>
+
     <div class="container">
-        <h1>Política de Privacidad</h1>
-        <p>Última actualización: [Fecha de actualización]</p>
+        <h1>Explora Flik</h1>
+        <p>Estamos encantados de tenerte aquí. Explora más sobre nosotros y descubre cómo podemos ayudarte.</p>
 
-        <p>[Aquí puedes colocar el texto de tu política de privacidad. Asegúrate de formatearlo adecuadamente usando
-            párrafos y encabezados según sea necesario.]</p>
-
-        <h2>Sección 1</h2>
-        <p>[Texto de la sección 1]</p>
-
-        <h2>Sección 2</h2>
-        <p>[Texto de la sección 2]</p>
-
-        <!-- Añade más secciones según sea necesario -->
-
-        <p>Si tienes alguna pregunta o inquietud acerca de nuestra política de privacidad, no dudes en contactarnos en
-            <a href="mailto:tuemail@flik.com">tuemail@flik.com</a>.
-        </p>
+        <div class="buttons">
+            <a href="terms-and-conditions.html">Términos y Condiciones</a>
+            <a href="privacy-policy.html">Política de Privacidad</a>
+        </div>
     </div>
 </body>
 
