@@ -1,82 +1,90 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flik - Bienvenido</title>
+    <title>Flik - Legal Documents</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
-
-        .header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
         }
-
         h1 {
-            text-align: center;
-            color: #333;
+            color: #007AFF;
+            margin-bottom: 30px;
         }
-
-        p {
-            margin-bottom: 20px;
-            text-align: center;
+        .logo {
+            width: 150px;
+            height: auto;
+            margin: 0 auto 30px;
+            display: block;
         }
-
-        .buttons {
-            text-align: center;
-            margin-top: 20px;
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
         }
-
-        .buttons a {
-            display: inline-block;
-            background-color: #4CAF50;
+        .button {
+            background-color: #007AFF;
             color: white;
-            padding: 10px 20px;
+            border: none;
+            padding: 15px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
             text-decoration: none;
-            border-radius: 5px;
-            margin: 0 10px;
-            transition: background-color 0.3s ease;
+            display: inline-block;
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
         }
-
-        .buttons a:hover {
-            background-color: #45a049;
+        .button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        @media (max-width: 480px) {
+            .logo {
+                width: 100px;
+            }
+            .button-container {
+                flex-direction: column;
+            }
+            .button {
+                width: 100%;
+            }
         }
     </style>
 </head>
-
 <body>
-    <div class="header">
-        <h1>Bienvenido a Flik</h1>
-        <p>Tu solución para [descripción breve de lo que hace tu app]</p>
-    </div>
-
     <div class="container">
-        <h1>Explora Flik</h1>
-        <p>Estamos encantados de tenerte aquí. Explora más sobre nosotros y descubre cómo podemos ayudarte.</p>
-
-        <div class="buttons">
-            <a href="terms.html">Términos y Condiciones</a>
-            <a href="privacy.html">Política de Privacidad</a>
+        <img src="images/flik-logo.png" alt="Flik Logo" class="logo">
+        <h1>Flik Legal Documents</h1>
+        <p>Welcome to Flik's legal center. Here you can find our Terms and Conditions and Privacy Policy. We believe in transparency and want to make sure you have easy access to this important information.</p>
+        <div class="button-container">
+            <a href="html/terms-and-conditions.html" class="button">Terms and Conditions</a>
+            <a href="html/privacy-policy.html" class="button">Privacy Policy</a>
         </div>
     </div>
 </body>
-
 </html>
