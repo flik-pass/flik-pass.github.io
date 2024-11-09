@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <!--
-	Flik Pass Landing Page
-	Adapted from Directive by HTML5 UP
-	html5up.net | @ajlkn
-	Released under the Creative Commons Attribution 3.0 License (html5up.net/license)
+    Flik Pass Landing Page
+    Adapted from Directive by HTML5 UP
+    html5up.net | @ajlkn
+    Released under the Creative Commons Attribution 3.0 License (html5up.net/license)
 -->
 <html>
 
@@ -11,7 +11,11 @@
 	<title>Flik Pass - Secure Your Entry</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!-- Main stylesheet -->
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+		integrity="sha384-jLKHWM+RyQV5T+Nk7x2eT1YdZK0b4oJjMjGAPjd1/e5axsz5j43LLY0x6IbbPfLI" crossorigin="anonymous">
 </head>
 
 <body class="is-preload">
@@ -34,27 +38,34 @@
 
 		<div class="box alt container">
 			<section class="feature left">
-				<span class="image icon solid fa-wallet"><img src="images/wallet.jpg" alt="Wallet Validation" /></span>
+				<a href="#" class="image icon solid fa-wallet">
+					<img src="images/wallet.jpg" alt="Wallet Validation" />
+				</a>
 				<div class="content">
 					<h3>Wallet Validation</h3>
-					<p>Connect and securely validate your Ethereum wallet with a simple signature.</p>
+					<p>Securely connect and validate your Ethereum wallet with a simple signature.</p>
 				</div>
 			</section>
 			<section class="feature right">
-				<span class="image icon solid fa-qrcode"><img src="images/qrcode.jpg" alt="QR Code Pass" /></span>
+				<a href="#" class="image icon solid fa-qrcode">
+					<img src="images/qrcode.jpg" alt="QR Code Pass" />
+				</a>
 				<div class="content">
 					<h3>QR Code Pass</h3>
-					<p>Generate a unique QR code as your pass for seamless event entry.</p>
+					<p>Generate a unique QR code as your pass for hassle-free event entry.</p>
 				</div>
 			</section>
 			<section class="feature left">
-				<span class="image icon solid fa-certificate"><img src="images/nft.jpg" alt="NFT Verification" /></span>
+				<a href="#" class="image icon solid fa-certificate">
+					<img src="images/nft.jpg" alt="NFT Ownership Verification" />
+				</a>
 				<div class="content">
 					<h3>NFT Ownership Verification</h3>
-					<p>Automatically verify NFT ownership to access exclusive events tailored for your collections.</p>
+					<p>Automatically verify your NFT ownership to access exclusive events.</p>
 				</div>
 			</section>
 		</div>
+
 
 		<footer class="major container medium">
 			<h3>Ready to Join the Future of Events?</h3>
@@ -74,23 +85,35 @@
 				<h2>Contact Us</h2>
 			</header>
 
-			<p>Have questions or need support? Reach out to us!</p>
+			<p>Have questions or need support? Send us a message!</p>
 
-			<!-- Contact Information -->
+			<!-- Contact form -->
+			<form method="POST" action="https://formspree.io/f/your_form_id">
+				<div class="row">
+					<div class="col-6 col-12-mobilep">
+						<input type="text" name="name" placeholder="Name" required />
+					</div>
+					<div class="col-6 col-12-mobilep">
+						<input type="email" name="email" placeholder="Email" required />
+					</div>
+					<div class="col-12">
+						<textarea name="message" placeholder="Message" rows="6" required></textarea>
+					</div>
+					<div class="col-12">
+						<ul class="actions special">
+							<li><input type="submit" value="Send Message" /></li>
+						</ul>
+					</div>
+				</div>
+			</form>
+
+			<!-- Additional links -->
 			<ul class="contact">
-				<li class="icon solid fa-envelope"><a href="mailto:flik.nft@gmail.com">flik.nft@gmail.com</a></li>
-				<li class="icon brands fa-discord"><a href="https://discord.gg/your-discord-link">Join our Discord
-						Community</a></li>
+				<li class="icon brands fa-discord"><a href="https://discord.gg/your-discord-link">Join our community
+						on Discord</a></li>
 			</ul>
 
-			<!-- Social Media Icons (Optional) -->
-			<ul class="icons">
-				<li><a href="https://twitter.com/yourprofile" class="icon brands fa-twitter"><span
-							class="label">Twitter</span></a></li>
-				<!-- Add other social media links if available -->
-			</ul>
-
-			<!-- Legal Links -->
+			<!-- Legal links -->
 			<ul class="legal">
 				<li><a href="privacy/">Privacy Policy</a></li>
 				<li><a href="terms/">Terms and Conditions</a></li>
@@ -103,6 +126,7 @@
 
 		</div>
 	</div>
+
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
