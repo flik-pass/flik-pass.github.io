@@ -16,16 +16,19 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
 		integrity="sha384-jLKHWM+RyQV5T+Nk7x2eT1YdZK0b4oJjMjGAPjd1/e5axsz5j43LLY0x6IbbPfLI" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.13/lottie.min.js"></script>
 </head>
 
 <body class="is-preload">
 
 	<!-- Header -->
 	<div id="header">
-		<span class="logo icon fa-ticket-alt"></span>
+		<span class="logo">
+			<img src="images/app_icon.png" alt="Flik Pass Icon">
+		</span>
 		<h1>Welcome to Flik Pass</h1>
-		<p>Your gateway to exclusive NFT events.<br />
-			Validate your ETH wallet and NFT ownership seamlessly.</p>
+		<p>Flik Pass is your bridge to premium NFT experiences. <br />
+			Connect your Ethereum wallet, confirm ownership, and join a world of exclusive events and communities.</p>
 	</div>
 
 	<!-- Main -->
@@ -33,46 +36,72 @@
 
 		<header class="major container medium">
 			<h2>Experience Events Like Never Before</h2>
-			<p>Effortlessly verify your wallet and NFTs to gain access.</p>
+			<p>Effortlessly access VIP events with verified ownership of NFTs. Connect with communities, showcase your
+				assets, and enjoy events designed for the exclusive few.</p>
+
 		</header>
 
 		<div class="box alt container">
+			<!-- Wallet Validation Section -->
 			<section class="feature left">
-				<a href="#" class="image icon solid fa-wallet">
-					<img src="images/wallet.jpg" alt="Wallet Validation" />
+				<a class="image">
+					<div id="wallet-animation" style="width: 100%; height: 90%;"></div>
 				</a>
 				<div class="content">
 					<h3>Wallet Validation</h3>
-					<p>Securely connect and validate your Ethereum wallet with a simple signature.</p>
+					<p>Connect your Ethereum wallet and confirm ownership with a simple, safe signature. Your privacy is
+						our priority.</p>
+
 				</div>
 			</section>
+
+			<!-- QR Code Pass Section -->
 			<section class="feature right">
-				<a href="#" class="image icon solid fa-qrcode">
-					<img src="images/qrcode.jpg" alt="QR Code Pass" />
+				<a class="image">
+					<div id="qr-animation" style="width: 100%; height: 100%;"></div>
 				</a>
 				<div class="content">
 					<h3>QR Code Pass</h3>
-					<p>Generate a unique QR code as your pass for hassle-free event entry.</p>
+					<p>Gain instant access with your unique QR code pass. Generated on successful validation, this pass
+						gives you hassle-free entry, so you can focus on enjoying the experience.</p>
+
 				</div>
 			</section>
+
+			<!-- NFT Ownership Verification Section -->
 			<section class="feature left">
-				<a href="#" class="image icon solid fa-certificate">
-					<img src="images/nft.jpg" alt="NFT Ownership Verification" />
+				<a class="image">
+					<div id="validate-animation" style="width: 100%; height: 100%;"></div>
 				</a>
 				<div class="content">
 					<h3>NFT Ownership Verification</h3>
-					<p>Automatically verify your NFT ownership to access exclusive events.</p>
+					<p>Flik Pass guarantees reliable NFT ownership verification, allowing event hosts and partners to
+						confirm participant's status quickly and accurately. Eliminate guesswork and ensure a high
+						standard of exclusivity for your audience.</p>
+
 				</div>
 			</section>
 		</div>
 
 
+
 		<footer class="major container medium">
 			<h3>Ready to Join the Future of Events?</h3>
-			<p>Download Flik Pass now and unlock a world of exclusive experiences.</p>
+			<p>Download Flik Pass now and discover a new standard for exclusive event access. Designed for NFT
+				collectors, community builders, and digital pioneers.</p>
+
 			<ul class="actions special">
-				<li><a href="#" class="button">Download the App</a></li>
+				<li>
+					<a href="https://apps.apple.com/app/id" target="_blank" class="button">
+						<i class="fab fa-apple"
+							style="vertical-align: -10%;vertical-align: -10%; font-size: 1.5em;"></i> Download on the
+						App Store
+					</a>
+				</li>
 			</ul>
+			<p style="text-align: center; font-size: 1em; color: #6e6e6e;">
+				The Android app is coming soon!
+			</p>
 		</footer>
 
 	</div>
@@ -85,33 +114,35 @@
 				<h2>Contact Us</h2>
 			</header>
 
-			<p>Have questions or need support? Send us a message!</p>
+			<p style="text-align: center; color: #ffffff;">
+				Have questions? Want to collaborate? Connect with us below. We are here to support, inspire, and help
+				you
+				navigate the world of NFTs.
+			</p>
 
-			<!-- Contact form -->
-			<form method="POST" action="https://formspree.io/f/your_form_id">
-				<div class="row">
-					<div class="col-6 col-12-mobilep">
-						<input type="text" name="name" placeholder="Name" required />
-					</div>
-					<div class="col-6 col-12-mobilep">
-						<input type="email" name="email" placeholder="Email" required />
-					</div>
-					<div class="col-12">
-						<textarea name="message" placeholder="Message" rows="6" required></textarea>
-					</div>
-					<div class="col-12">
-						<ul class="actions special">
-							<li><input type="submit" value="Send Message" /></li>
-						</ul>
-					</div>
+			<div class="contact-info" style="text-align: center; padding: 2em;">
+				<!-- Email with Icon -->
+				<div style="margin-top: 1em;">
+					<p style="font-size: 1.2em; color: #ffffff;">
+						<i class="fas fa-envelope"></i>
+						<a href="mailto:flik.nft@gmail.com"
+							style="color: #ffffff; text-decoration: none; margin-left: 0.5em;">flik.nft@gmail.com</a>
+					</p>
 				</div>
-			</form>
 
-			<!-- Additional links -->
-			<ul class="contact">
-				<li class="icon brands fa-discord"><a href="https://discord.gg/your-discord-link">Join our community
-						on Discord</a></li>
-			</ul>
+				<!-- Social Media Links -->
+				<div style="margin-top: 1.5em; font-size: 1.5em;">
+					<a href="https://discord.gg/your-discord-link" target="_blank"
+						style="display: inline-block; margin-right: 1em; color: #FFFFFF; background-color: #7289da; border-radius: 8px; padding: 0.3em 0.6em; text-decoration: none;">
+						<i class="fab fa-discord"></i> Discord
+					</a>
+					<a href="https://twitter.com/your-twitter-handle" target="_blank"
+						style="display: inline-block; margin-right: 1em; color: #FFFFFF; background-color: #1da1f2; border-radius: 8px; padding: 0.3em 0.6em; text-decoration: none;">
+						<i class="fab fa-twitter"></i> Twitter
+					</a>
+				</div>
+			</div>
+
 
 			<!-- Legal links -->
 			<ul class="legal">
@@ -134,6 +165,36 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
+	<!-- Lottie Animations Initialization -->
+	<script>
+		lottie.loadAnimation({
+			container: document.getElementById('wallet-animation'),
+			renderer: 'svg',
+			loop: true,
+			autoplay: true,
+			path: './assets/lottie/wallet-lottie.json' // Update with the path to your wallet animation JSON
+		});
+
+		lottie.loadAnimation({
+			container: document.getElementById('qr-animation'),
+			renderer: 'svg',
+			loop: true,
+			autoplay: true,
+			path: './assets/lottie/qr-lottie.json' // Update with the path to your QR code animation JSON
+		});
+
+		lottie.loadAnimation({
+			container: document.getElementById('validate-animation'),
+			renderer: 'svg',
+			loop: true,
+			autoplay: true,
+			path: './assets/lottie/validate-lottie.json' // Update with the path to your NFT ownership animation JSON
+		});
+
+
+
+	</script>
 
 </body>
 
