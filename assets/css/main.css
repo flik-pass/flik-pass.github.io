@@ -2942,11 +2942,10 @@ input[type="button"].small,
 
 #footer {
 	background-attachment: scroll;
-	background-color: #39918C;
-	background-image: url("images/bottom-3200.svg");
+	background-image: url("images/bottom-3200.svg"), url("images/overlay.png");
 	background-position: top center;
-	background-repeat: repeat-x;
-	background-size: 3200px 460px;
+	background-repeat: repeat-x, repeat, no-repeat;
+	background-size: 3200px 460px, auto, cover;
 	color: rgba(255, 255, 255, 0.8);
 	/*
 				Since the SVG background occupies a lot of vertical space, we'll
@@ -3206,8 +3205,9 @@ input[type="button"].small,
 	/* Footer */
 
 	#footer {
-		background-image: url("images/bottom-1600.svg");
-		background-size: 1600px 230px;
+		background-image: url("images/bottom-1600.svg"), url("images/overlay.png"), url("../../images/header.jpg");
+		background-size: 1600px 230px, auto, cover;
+		;
 		margin-top: -100px;
 		padding: calc(230px + 4em) 0 6em 0;
 	}
@@ -3366,8 +3366,9 @@ input[type="button"].small,
 	/* Footer */
 
 	#footer {
-		background-image: url("images/bottom-1280.svg");
-		background-size: 1280px 184px;
+		background-image: url("images/bottom-1280.svg"), url("images/overlay.png"), url("../../images/header.jpg");
+		background-size: 1280px 184px, auto, cover;
+		;
 		margin-top: -75px;
 		padding: calc(184px + 2em) 0 2em 0;
 	}
