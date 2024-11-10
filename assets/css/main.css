@@ -3468,14 +3468,14 @@ input[type="button"].small,
 .social-button {
 	display: inline-block;
 	color: #FFFFFF;
-	border-radius: 8px;
+	border-radius: 20px;
 	padding: 0.3em 0.6em;
 	text-decoration: none;
 	line-height: 1;
 	border: none;
 	box-shadow: none;
 	text-align: center;
-	min-width: 150px;
+	min-width: 60px;
 	margin: 5px;
 	/* Ancho mínimo para mantener ambos botones del mismo tamaño */
 }
